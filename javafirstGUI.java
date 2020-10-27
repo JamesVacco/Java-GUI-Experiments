@@ -25,7 +25,7 @@ public class javafirstGUI
         final JButton southButton = new JButton("Click Me");//Creates a button
         buttons.getContentPane().add(BorderLayout.SOUTH, southButton);//Locates the button to the bottom of the box
 
-        final JButton eastButton = new JButton("Also Click me");
+        final JButton eastButton = new JButton("Also Click me");//Creates an additional button
         buttons.getContentPane().add(BorderLayout.EAST, eastButton);
         
         southButton.addActionListener(new ActionListener() {//Adds action to the button
