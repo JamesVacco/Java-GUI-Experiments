@@ -16,8 +16,8 @@ public class javafirstGUI
         f.setSize(250, 250);//Sets size of Window
         f.setLocation(960,540);//Sets location of window at launch
 
-        buttons.setSize(250,250);
-        buttons.setLocation(1200,540);
+        buttons.setSize(250,250);//Sets size of window that contains the buttons
+        buttons.setLocation(1200,540);//Sets location of window that contains buttons
         
         final JTextArea textArea = new JTextArea(10, 40);//Creates a text area
         f.getContentPane().add(BorderLayout.CENTER, textArea);//Puts the text area the center of the box
