@@ -12,21 +12,24 @@ public class javafirstGUI
         JFrame f = new JFrame("A JFrame");
 
         JFrame buttons = new JFrame("A JFrame");
-        
+   
         f.setSize(250, 250);//Sets size of Window
         f.setLocation(960,540);//Sets location of window at launch
 
         buttons.setSize(250,250);//Sets size of window that contains the buttons
         buttons.setLocation(1200,540);//Sets location of window that contains buttons
-        
+
         final JTextArea textArea = new JTextArea(10, 40);//Creates a text area
         f.getContentPane().add(BorderLayout.CENTER, textArea);//Puts the text area the center of the box
         
         final JButton southButton = new JButton("Click Me");//Creates a button
+        
         buttons.getContentPane().add(BorderLayout.SOUTH, southButton);//Locates the button to the bottom of the box
 
         final JButton eastButton = new JButton("Also Click me");//Creates an additional button
-        buttons.getContentPane().add(BorderLayout.EAST, eastButton);
+
+        buttons.getContentPane().add(BorderLayout.CENTER, eastButton);
+
         
         southButton.addActionListener(new ActionListener() {//Adds action to the button
     
@@ -50,8 +53,6 @@ public class javafirstGUI
     
         f.setVisible(true);
         buttons.setVisible(true);
-
-        //Test to see how this git push works
     
     }
 }
